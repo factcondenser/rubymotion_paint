@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1IQ-cu-kKQ">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Painting Controller-->
+        <scene sceneID="kYK-af-NnT">
+            <objects>
+                <viewController storyboardIdentifier="PaintingController" id="1IQ-cu-kKQ" customClass="PaintingController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="clf-LD-f47">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="dl0-n2-1BK">
+                                <rect key="frame" x="46" y="666" width="322" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yg4-nu-zIP">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <state key="normal" backgroundImage="button_black.png"/>
+                                        <state key="selected" backgroundImage="button_black_selected.png"/>
+                                        <connections>
+                                            <action selector="select_color:" destination="1IQ-cu-kKQ" eventType="touchUpInside" id="dhs-Pf-BVK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yaz-1X-Kjq">
+                                        <rect key="frame" x="58" y="3" width="44" height="44"/>
+                                        <state key="normal" backgroundImage="button_red.png"/>
+                                        <state key="selected" backgroundImage="button_red_selected.png"/>
+                                        <connections>
+                                            <action selector="select_color:" destination="1IQ-cu-kKQ" eventType="touchUpInside" id="diM-eq-rom"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wHv-GN-Ozb">
+                                        <rect key="frame" x="113" y="3" width="44" height="44"/>
+                                        <state key="normal" backgroundImage="button_yellow.png"/>
+                                        <state key="selected" backgroundImage="button_yellow_selected.png"/>
+                                        <connections>
+                                            <action selector="select_color:" destination="1IQ-cu-kKQ" eventType="touchUpInside" id="2h2-9X-Ecj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bK2-Hh-euN">
+                                        <rect key="frame" x="168" y="3" width="44" height="44"/>
+                                        <state key="normal" backgroundImage="button_green.png"/>
+                                        <state key="selected" backgroundImage="button_green_selected.png"/>
+                                        <connections>
+                                            <action selector="select_color:" destination="1IQ-cu-kKQ" eventType="touchUpInside" id="7Fr-3T-P7r"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ah4-JA-VAd">
+                                        <rect key="frame" x="223" y="3" width="44" height="44"/>
+                                        <state key="normal" backgroundImage="button_blue.png"/>
+                                        <state key="selected" backgroundImage="button_blue_selected.png"/>
+                                        <connections>
+                                            <action selector="select_color:" destination="1IQ-cu-kKQ" eventType="touchUpInside" id="p3y-gO-Qrc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CS0-uF-caD">
+                                        <rect key="frame" x="278" y="3" width="44" height="44"/>
+                                        <state key="normal" backgroundImage="button_brown.png"/>
+                                        <state key="selected" backgroundImage="button_brown_selected.png"/>
+                                        <connections>
+                                            <action selector="select_color:" destination="1IQ-cu-kKQ" eventType="touchUpInside" id="0GN-MF-Y16"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="yg4-nu-zIP" firstAttribute="leading" secondItem="dl0-n2-1BK" secondAttribute="leading" id="G5D-sH-eDc"/>
+                                    <constraint firstAttribute="height" constant="50" id="MQS-Vz-4nF"/>
+                                    <constraint firstAttribute="trailing" secondItem="CS0-uF-caD" secondAttribute="trailing" id="UTj-hb-chU"/>
+                                    <constraint firstAttribute="width" constant="322" id="mSu-SY-e9B"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qyx-gJ-tIo" customClass="PaintingView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="hDM-Xh-J8P" id="ufC-QB-Vco"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="fPC-eM-cot" firstAttribute="bottom" secondItem="dl0-n2-1BK" secondAttribute="bottom" constant="20" id="fUt-aP-qz7"/>
+                            <constraint firstItem="dl0-n2-1BK" firstAttribute="centerX" secondItem="fPC-eM-cot" secondAttribute="centerX" id="ljD-EI-cx9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fPC-eM-cot"/>
+                    </view>
+                    <connections>
+                        <outlet property="black_button" destination="yg4-nu-zIP" id="hBg-eA-GCd"/>
+                        <outlet property="blue_button" destination="ah4-JA-VAd" id="zQ3-Gn-J5Z"/>
+                        <outlet property="brown_button" destination="CS0-uF-caD" id="y8n-PH-YlQ"/>
+                        <outlet property="green_button" destination="bK2-Hh-euN" id="QFn-gJ-laW"/>
+                        <outlet property="painting_view" destination="qyx-gJ-tIo" id="d1n-YP-Nbz"/>
+                        <outlet property="red_button" destination="Yaz-1X-Kjq" id="zWA-0l-Iau"/>
+                        <outlet property="yellow_button" destination="wHv-GN-Ozb" id="zaP-4L-oFI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dd1-nV-G3d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <customObject id="hDM-Xh-J8P" customClass="StrokeGestureRecognizer">
+                    <connections>
+                        <action selector="stroke_gesture_changed:" destination="1IQ-cu-kKQ" id="NhL-ek-ld5"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="42.028985507246382" y="74.184782608695656"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="button_black.png" width="27.076923370361328" height="27.076923370361328"/>
+        <image name="button_black_selected.png" width="30.769229888916016" height="30.769229888916016"/>
+        <image name="button_blue.png" width="44" height="44"/>
+        <image name="button_blue_selected.png" width="50" height="50"/>
+        <image name="button_brown.png" width="44" height="44"/>
+        <image name="button_brown_selected.png" width="50" height="50"/>
+        <image name="button_green.png" width="44" height="44"/>
+        <image name="button_green_selected.png" width="50" height="50"/>
+        <image name="button_red.png" width="44" height="44"/>
+        <image name="button_red_selected.png" width="50" height="50"/>
+        <image name="button_yellow.png" width="44" height="44"/>
+        <image name="button_yellow_selected.png" width="50" height="50"/>
+    </resources>
+</document>
